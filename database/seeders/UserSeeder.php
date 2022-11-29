@@ -19,7 +19,7 @@ class UserSeeder extends Seeder
                 'id'             => 1,
                 'name'           => 'venkatesh',
                 'email'          => 'venki@gmail.com',
-                'password'       => '$2y$10$I80I3j5IhIPAkRZpytK3GeGUofOZBOxPIfapwPagZI1i/ailcquGC',
+                'password'       => '$2y$10$7ug6Yb6ROP4F/BRHn4G6uey00WoAG7yaiw85h0H8PUhTc3o6OKrIG',
                 'remember_token' => null,                
             ]         
             

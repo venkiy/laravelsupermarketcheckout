@@ -55,7 +55,7 @@
                         <li class="nav-item"><a id="navbarDropdown" class="nav-link" href="{{ route('products') }}">
                                     Products
                                 </a></li>
-                        <li class="nav-item"><a id="navbarDropdown" class="nav-link" href="{{ route('logout') }}">
+                        <li class="nav-item"><a id="navbarDropdown" class="nav-link" href="{{ route('cart') }}">
                                     Cart
                                 </a></li>
                             <li class="nav-item dropdown">
