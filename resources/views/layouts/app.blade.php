@@ -48,20 +48,26 @@
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
-                                    <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                   <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
                         @else
+                        <li class="nav-item"><a id="navbarDropdown" class="nav-link" href="{{ route('products') }}">
+                                    Products
+                                </a></li>
+                        <li class="nav-item"><a id="navbarDropdown" class="nav-link" href="{{ route('logout') }}">
+                                    Cart
+                                </a></li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }}
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu1 dropdown-menu-end" aria-labelledby="navbarDropdown">
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                         {{ __('Logout') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
@@ -79,5 +85,7 @@
             @yield('content')
         </main>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    @yield('footer-scripts')
 </body>
 </html>
